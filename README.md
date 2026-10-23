@@ -17,7 +17,7 @@ assets/         fotografías optimizadas
 ## Editar el contenido
 
 - Los textos y enlaces están en `index.html`, en el mismo orden del documento original.
-- Falta el correo de contacto: al final de `index.html` hay un comentario `CONTACTO` con el bloque listo para descomentar.
+- El correo de contacto está al final de `index.html`, en el bloque `cierre__correo`.
 - Paleta y tipografías están como variables al inicio de `styles.css`.
 
 ## Probar en local

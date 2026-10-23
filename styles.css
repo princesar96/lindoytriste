@@ -537,6 +537,11 @@ a.boton:hover { background: var(--bulb); color: var(--ink); }
   font-weight: 600;
 }
 
+.cierre__correo {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
 /* ---------- Pantallas angostas ---------- */
 
 @media (max-width: 860px) {
