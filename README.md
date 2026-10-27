@@ -9,7 +9,7 @@ Sin framework ni paso de build: HTML, CSS y un script mínimo.
 ```
 index.html      contenido de la página
 styles.css      estilos
-script.js       enciende las luces de la línea de tiempo al hacer scroll
+script.js       enciende las estrellas de la trayectoria y carga los reproductores de YouTube
 vercel.json     configuración de Vercel (cache de imágenes)
 assets/         fotografías optimizadas
 ```
