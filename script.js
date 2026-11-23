@@ -1,3 +1,12 @@
+// 0. La barra se oscurece al bajar de la portada.
+(function () {
+  var barra = document.querySelector('.barra');
+  if (!barra) return;
+  function ajustar() { barra.classList.toggle('is-solida', window.scrollY > 40); }
+  window.addEventListener('scroll', ajustar, { passive: true });
+  ajustar();
+})();
+
 // 1. Menú en pantallas pequeñas.
 (function () {
   var boton = document.querySelector('.barra__boton');
@@ -14,6 +23,15 @@
   });
   menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') cerrar(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar(); });
+})();
+
+// Barra: transparente sobre la portada, sólida al bajar.
+(function () {
+  var barra = document.querySelector('.barra');
+  if (!barra) return;
+  function marcar() { barra.classList.toggle('is-solida', window.scrollY > window.innerHeight * 0.6); }
+  window.addEventListener('scroll', marcar, { passive: true });
+  marcar();
 })();
 
 // 2. Las estrellas de la historia se encienden una a una al llegar a ellas.
