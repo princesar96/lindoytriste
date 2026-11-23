@@ -7,9 +7,9 @@ Sin framework ni paso de build: HTML, CSS y un script mínimo.
 ## Estructura
 
 ```
-index.html      contenido de la página
+index.html      contenido (música, videos, propuesta, historia, prensa, contacto)
 styles.css      estilos
-script.js       enciende las estrellas de la trayectoria y carga los reproductores de YouTube
+script.js       menú móvil, estrellas de la historia y reproductores de YouTube
 vercel.json     configuración de Vercel (cache de imágenes)
 assets/         fotografías optimizadas
 ```

@@ -1,4 +1,22 @@
-// 1. Las estrellas de la trayectoria se encienden una a una al llegar a ella.
+// 1. Menú en pantallas pequeñas.
+(function () {
+  var boton = document.querySelector('.barra__boton');
+  var menu = document.getElementById('menu');
+  if (!boton || !menu) return;
+
+  function cerrar() {
+    menu.classList.remove('is-open');
+    boton.setAttribute('aria-expanded', 'false');
+  }
+  boton.addEventListener('click', function () {
+    var abierto = menu.classList.toggle('is-open');
+    boton.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+  });
+  menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') cerrar(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar(); });
+})();
+
+// 2. Las estrellas de la historia se encienden una a una al llegar a ellas.
 (function () {
   var nodos = Array.prototype.slice.call(document.querySelectorAll('.nodo'));
   var linea = document.querySelector('.linea');
@@ -20,9 +38,8 @@
   obs.observe(linea);
 })();
 
-// 2. Reproductores de YouTube: la página muestra una imagen y solo carga
-// el reproductor cuando alguien lo pide. Así la página abre rápido y todos
-// los videos mantienen la misma proporción 16:9.
+// 3. Reproductores de YouTube: se muestra una imagen y el reproductor solo
+// se carga al hacer clic, así la página abre rápido y todos mantienen 16:9.
 (function () {
   document.querySelectorAll('.video__boton').forEach(function (boton) {
     boton.addEventListener('click', function () {
