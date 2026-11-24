@@ -78,3 +78,36 @@
     });
   });
 })();
+
+// 4. Galería en vivo: al tocar una foto se agranda; flechas y Esc para moverse.
+(function () {
+  var visor = document.querySelector('.visor');
+  var fotos = Array.prototype.slice.call(document.querySelectorAll('.galeria__foto'));
+  if (!visor || !fotos.length) return;
+  var img = visor.querySelector('img');
+  var pie = visor.querySelector('figcaption');
+  var actual = 0, origen = null;
+
+  function mostrar(i) {
+    actual = (i + fotos.length) % fotos.length;
+    var f = fotos[actual];
+    img.src = f.getAttribute('data-grande');
+    img.alt = f.querySelector('img').alt;
+    pie.textContent = f.getAttribute('data-texto') || '';
+  }
+  fotos.forEach(function (f, i) {
+    f.addEventListener('click', function () {
+      origen = f; mostrar(i);
+      if (visor.showModal) visor.showModal(); else visor.setAttribute('open', '');
+    });
+  });
+  function cerrar() { if (visor.close) visor.close(); else visor.removeAttribute('open'); if (origen) origen.focus(); }
+  visor.querySelector('.visor__cerrar').addEventListener('click', cerrar);
+  visor.querySelector('.visor__nav--ant').addEventListener('click', function () { mostrar(actual - 1); });
+  visor.querySelector('.visor__nav--sig').addEventListener('click', function () { mostrar(actual + 1); });
+  visor.addEventListener('click', function (e) { if (e.target === visor) cerrar(); });
+  visor.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') mostrar(actual - 1);
+    if (e.key === 'ArrowRight') mostrar(actual + 1);
+  });
+})();
