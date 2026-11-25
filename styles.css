@@ -365,6 +365,32 @@ summary:focus-visible { outline: 3px solid var(--rojo); outline-offset: 4px; }
   .visor__nav--sig { right: 30%; }
 }
 
+
+/* ===== Ajustes de ronda 3 ===== */
+.proyecto .lead { margin-top: 0; }
+.etiquetas__t { margin-top: 1rem; margin-bottom: .45rem; font-size: .7rem; }
+.etiquetas li:nth-child(3n) { background: var(--cielo); }
+.foto-ampliable { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.foto-ampliable:focus-visible { outline: 3px solid var(--rojo); outline-offset: 3px; }
+.lanz__video .clips__t { margin-top: .6rem; }
+.spotify { grid-column: 1 / -1; }
+.spotify iframe { display: block; width: 100%; border: 0; border-radius: .8rem; }
+.clips__sub { grid-column: 1 / -1; margin-bottom: -.6rem; color: var(--amarillo); }
+.clips .creditos { max-width: 52ch; }
+.circo > .guinos { margin-top: .2rem; }
+
+/* En vivo: videos y reels */
+.escenas { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 1.4rem; margin-top: clamp(2rem, 4vw, 3rem); align-items: start; }
+.escena--yt { grid-column: 1; }
+.escena--ig { grid-row: 1 / span 2; }
+.escena__t { margin-top: .6rem; font: 800 1.1rem/1.15 var(--serif); }
+.escena__t span { display: block; margin-top: .15rem; font: 400 .72rem var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--rojo); }
+.escena .video { box-shadow: 0 .6rem 1.4rem rgba(15,13,20,.25); }
+.reel { aspect-ratio: 9 / 16; background: #fff; border-radius: .8rem; overflow: hidden; box-shadow: 0 .6rem 1.4rem rgba(15,13,20,.25); }
+.reel iframe { width: 100%; height: 100%; border: 0; }
+@media (max-width: 980px) { .escenas { grid-template-columns: repeat(2, minmax(0, 1fr)); } .escena--yt { grid-column: 1 / -1; } .escena--ig { grid-row: auto; } }
+@media (max-width: 480px) { .escenas { grid-template-columns: minmax(0, 1fr); } .escena--ig { grid-column: 1 / -1; } .reel { max-width: 20rem; } }
+
 /* Tablet */
 @media (max-width: 980px) {
   .linea { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3.5rem 1.5rem; }

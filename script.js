@@ -82,7 +82,7 @@
 // 4. Galerías: al tocar una foto se agranda; flechas y Esc para moverse dentro de su grupo.
 (function () {
   var visor = document.querySelector('.visor');
-  var todas = Array.prototype.slice.call(document.querySelectorAll('.galeria__foto'));
+  var todas = Array.prototype.slice.call(document.querySelectorAll('.galeria__foto, .foto-ampliable'));
   if (!visor || !todas.length) return;
   var img = visor.querySelector('img');
   var pie = visor.querySelector('figcaption');
