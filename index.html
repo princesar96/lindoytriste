@@ -43,9 +43,8 @@
     <button class="barra__boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
     <nav class="barra__nav" id="menu" aria-label="Secciones">
       <a href="#proyecto">Proyecto</a>
-      <a href="#musica">Música</a>
-      <a href="#videos">Videos</a>
-      <a href="#propuesta">Propuesta</a>
+      <a href="#la-caida-de-la-casa">La caída de la casa</a>
+      <a href="#un-circo">Un circo</a>
       <a href="#historia">Historia</a>
       <a href="#en-vivo">En vivo</a>
       <a href="#prensa">Prensa</a>
@@ -64,7 +63,7 @@
       <p class="portada__lema"><span>Canciones lindas y tristes,</span> <span>baladas y antibaladas.</span></p>
       <p class="portada__acciones">
         <a class="boton boton--solido" href="#un-circo">Escuchar</a>
-        <a class="boton" href="#videos">Ver videos</a>
+        <a class="boton" href="#videoclips">Ver videos</a>
       </p>
     </div>
 
@@ -84,181 +83,43 @@
   <main>
     <!-- PROYECTO -->
     <section class="bloque proyecto" id="proyecto" aria-labelledby="t-proyecto">
-      <div class="envoltura proyecto__rejilla">
-        <div>
-          <p class="mono">El proyecto</p>
-          <h2 id="t-proyecto" class="titulo">Lindoytriste</h2>
-        </div>
-        <div class="proyecto__texto">
-          <p class="lead">Lindoytriste es el proyecto solista de César Carreño Montecino, músico, compositor, periodista y realizador audiovisual chileno, nacido en Talca y residente en Santiago. El proyecto comenzó a formarse en 2023 y fue lanzado en 2025 con su primer sencillo, <em>La caída de la casa</em>.</p>
-          <p>Su propuesta nace desde la canción romántica y la balada alternativa, explorando el amor, la pérdida, la distancia, la incomunicación, la soledad y la ilusión. Su sonido combina guitarras, samplers y atmósferas inquietantes con una sensibilidad íntima y narrativa.</p>
-          <p>Propone un romanticismo visceral a partir de canciones lindas y tristes, que transforman experiencias personales en relatos capaces de generar identificación y acompañamiento. Incorpora además una perspectiva queer, abordando el amor y los vínculos sin restricciones de género.</p>
-          <div class="influencias">
-            <p class="mono">Influencias</p>
-            <ul class="etiquetas">
+      <div class="envoltura">
+        <div class="proyecto__rejilla">
+          <div class="proyecto__texto">
+            <p class="mono">El proyecto</p>
+            <h2 id="t-proyecto" class="titulo">Lindoytriste</h2>
+            <p class="lead">Lindoytriste es el proyecto solista de César C. Montecino, periodista, músico y realizador audiovisual chileno, nacido en Talca y actualmente residente en Santiago de Chile. El proyecto comenzó a formarse en 2023 y fue lanzado en 2025 con su primer sencillo, “La caída de la casa”.</p>
+            <p>Su propuesta nace desde la canción romántica y la balada alternativa, proponiendo la “antibalada” como un formato ideal para explorar temas como el amor, la pérdida, la distancia, la memoria, el fracaso y la ilusión. Su sonido combina guitarras, samplers y atmósferas inquietantes con una sensibilidad íntima y narrativa. Incorpora además una perspectiva queer, abordando el amor y los vínculos sin restricciones. Su más reciente lanzamiento “Un circo” (EP), explora este formato a fondo.</p>
+            <ul class="etiquetas" aria-label="Influencias">
               <li>Christina Rosenvinge</li><li>Camila Moreno</li><li>Lhasa de Sela</li><li>Violeta Parra</li><li>Pedropiedra</li><li>Javiera Mena</li>
             </ul>
           </div>
+
+          <ul class="album" aria-label="Fotografías de Lindoytriste">
+            <li class="polaroid polaroid--a"><img src="assets/retrato-mano-mini.jpg" width="720" height="480" loading="lazy" alt="Retrato de César Carreño Montecino con una mano frente al rostro."></li>
+            <li class="polaroid polaroid--b"><img src="assets/estrellas-suelo-mini.jpg" width="720" height="405" loading="lazy" alt="Papel con estrellas sobre el suelo."></li>
+            <li class="polaroid polaroid--c"><img src="assets/setlist-mini.jpg" width="720" height="540" loading="lazy" alt="Hojas impresas con letras y acordes de canciones."></li>
+            <li class="polaroid polaroid--d"><img src="assets/estrellas-papel-mini.jpg" width="720" height="480" loading="lazy" alt="Papel de regalo con estrellas."></li>
+          </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- MÚSICA -->
-    <section class="bloque musica" id="musica" aria-labelledby="t-musica">
-      <div class="musica__fondo" aria-hidden="true"></div>
-      <div class="envoltura">
-        <p class="mono">Música</p>
-        <h2 id="t-musica" class="visually-hidden">Música</h2>
-
-        <ul class="plataformas" aria-label="Escuchar a Lindoytriste">
-          <li><a class="boton" href="https://open.spotify.com/intl-es/artist/3BiCyXL84lNNLmmLpQZnq5" target="_blank" rel="noopener">Spotify</a></li>
-          <li><a class="boton" href="https://music.apple.com/cl/artist/lindoytriste/1807225728" target="_blank" rel="noopener">Apple Music</a></li>
-          <li><a class="boton" href="https://www.youtube.com/@lindoytriste" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a class="boton" href="https://music.youtube.com/@lindoytriste" target="_blank" rel="noopener">YouTube Music</a></li>
-        </ul>
-
-        <!-- Para sumar un lanzamiento: copia un bloque <article class="era"> y cambia portada, textos y fondo. -->
-        <article class="era era--circo" id="un-circo" aria-labelledby="t-circo">
-          <p class="era__nombre" id="t-circo" aria-hidden="false"><em>Un circo</em></p>
-          <figure class="era__portada">
-            <img src="assets/un-circo-ep.jpg" width="1100" height="1100" loading="lazy"
-                 alt="Portada de Un circo: fotografía en blanco y negro de una persona con sombrero blanco y maquillaje de payaso frente a un carro de bomberos, con luces como estrellas arriba.">
-          </figure>
-          <div class="era__texto">
-            <p class="mono">Primer EP · enero de 2026</p>
-            <p class="era__frase">“Como un circo acústico y experimental”, define Lindoytriste a su primer EP.</p>
-            <p>Seis canciones en tan solo ocho minutos que profundizan la antibalada: un recorrido íntimo y surreal que va del fracaso a la persistencia, pasando por el dolor, la ternura y una nostalgia infantil que no se abandona. “Es más como un circo mental”, dice su autor, que además produjo el EP.</p>
-            <p>La voz de Chespirito abre y cierra el disco como un gesto lúdico, que presenta el circo no como espectáculo sino como estado mental.</p>
-          </div>
-
-          <ol class="pistas" aria-label="Tracklist de Un circo">
-            <li><span class="pistas__n">01</span><span class="pistas__t">Todos los payasos</span></li>
-            <li><span class="pistas__n">02</span><span class="pistas__t">Tiro al blanco</span><span class="pistas__tema">el fracaso</span></li>
-            <li><span class="pistas__n">03</span><span class="pistas__t">Pirámide</span><span class="pistas__tema">la trascendencia</span></li>
-            <li><span class="pistas__n">04</span><span class="pistas__t">Quebrazón</span><span class="pistas__tema">el dolor</span></li>
-            <li><span class="pistas__n">05</span><span class="pistas__t">Gatos porfiados</span><span class="pistas__tema">la persistencia</span></li>
-            <li><span class="pistas__n">06</span><span class="pistas__t">¡Vivan los payasos!</span></li>
-          </ol>
-
-          <div class="era__player">
-            <p class="mono">El EP de corrido</p>
-            <div class="video">
-              <button class="video__boton" type="button" data-yt="WYWSaztrGTU" data-titulo="Un circo, EP completo" aria-label="Reproducir Un circo, EP completo">
-                <img src="https://i.ytimg.com/vi/WYWSaztrGTU/maxresdefault.jpg" onerror="this.onerror=null;this.src='assets/un-circo-oscura.jpg'" alt="" loading="lazy" width="1280" height="720">
-                <span class="play" aria-hidden="true"></span>
-              </button>
-            </div>
-            <p class="enlace-chico"><a href="https://www.youtube.com/watch?v=WYWSaztrGTU" target="_blank" rel="noopener">Abrir en YouTube</a></p>
-          </div>
-
-          <p class="guinos"><span class="mono">Guiños</span> “Otra era”, de Javiera Mena, en <em>Pirámide</em>. “Me gustas tú”, de Manu Chao, en <em>Quebrazón</em>. Videojuegos de infancia: <em>Circus Charlie</em>, <em>Antarctic Adventure</em>, <em>The Legend of Zelda</em> y <em>Donkey Kong Country</em>.</p>
-        </article>
-      </div>
-
-      <article class="caida" id="la-caida-de-la-casa" aria-labelledby="t-caida">
-        <img class="caida__fondo" src="assets/caida-manos.jpg" width="1800" height="1012" loading="lazy" alt="">
-        <div class="caida__velo" aria-hidden="true"></div>
-        <div class="envoltura caida__rejilla">
-          <div class="caida__texto">
-            <p class="mono">Single debut · 2025</p>
-            <h3 id="t-caida" class="caida__titulo"><em>La caída de la casa</em></h3>
-            <p class="era__frase">Una canción frágil pero demoledora sobre la pérdida del primer amor.</p>
-            <p>Fue escrita como un poema a fines de 2017 y se transformó en canción. Su narrativa reimagina el cuerpo como una casa que se derrumba: una fachada agrietada donde la pena se vuelve un canto lento.</p>
-            <p>Se construye con doce versos, una guitarra acústica y un puñado de sonidos que rebotan como ecos de un pasado.</p>
-            <ul class="sellos" aria-label="Sonidos de la canción">
-              <li>Lluvia</li><li>Temblores</li><li>Objetos que caen</li><li>Un reloj que se detiene</li>
-            </ul>
-            <p class="caida__enlace"><a class="boton boton--solido" href="#videos">Ver el videoclip</a></p>
-          </div>
-          <figure class="caida__portada">
-            <img src="assets/la-caida-de-la-casa.jpg" width="1459" height="821" loading="lazy"
-                 alt="Portada de La caída de la casa: una figura de rostro cubierto yace sobre un somier viejo en una habitación con hojas secas en el piso. Escrito a mano: Lindoytriste, La caída de la casa.">
+        <div class="proyecto__anti">
+          <details class="anti">
+            <summary>
+              <span class="antibalada">antibalada</span>
+              <span class="mas" aria-hidden="true"></span>
+              <span class="visually-hidden">Mostrar descripción de la antibalada</span>
+            </summary>
+            <p class="bajada">Canciones acústicas que abrazan la disonancia, se apartan de la métrica tradicional y se resisten a lo comercial. Una balada que se desarma y se vuelve a armar sin más instrucciones que la intuición y la experimentación.</p>
+          </details>
+          <figure class="cita">
+            <blockquote><p>Creo que es un formato más democrático y que abraza cosas que a veces la gente quiere evitar.</p></blockquote>
+            <figcaption class="mono">Lindoytriste, sobre la antibalada</figcaption>
           </figure>
         </div>
-      </article>
-    </section>
-
-    <!-- VIDEOS -->
-    <section class="bloque videos" id="videos" aria-labelledby="t-videos">
-      <img class="fondo-foto" src="assets/estrellas-suelo.jpg" width="1600" height="899" loading="lazy" alt="">
-      <div class="fondo-velo" aria-hidden="true"></div>
-      <div class="envoltura">
-        <p class="mono">Videoclips</p>
-        <h2 id="t-videos" class="titulo">Cada canción, su imagen</h2>
-
-        <article class="clip">
-          <p class="clip__n" aria-hidden="true">01</p>
-          <div class="clip__video">
-            <div class="video">
-              <button class="video__boton" type="button" data-yt="xU6xwMFuQWM" data-titulo="Tiro al blanco, videoclip" aria-label="Reproducir el videoclip de Tiro al blanco">
-                <img src="assets/tiro-al-blanco.jpg" alt="" loading="lazy" width="1600" height="900">
-                <span class="play" aria-hidden="true"></span>
-              </button>
-            </div>
-            <img class="clip__extra" src="assets/tiro-ruedo.jpg" width="1536" height="864" loading="lazy" alt="Fotograma de Tiro al blanco: un payaso de sombrero blanco levanta una pistola desde una rueda de la fortuna, de noche.">
-          </div>
-          <div class="clip__datos">
-            <p class="mono">2026 · Un circo</p>
-            <h3 class="clip__titulo">Tiro al blanco</h3>
-            <p>Grabado con una handycam en los Juegos Diana. Un payaso de rodeo frustrado con una brillante pistola en mano.</p>
-            <p class="creditos">Dirección de fotografía y cámara: Mia Loops y Javier Galindo.</p>
-            <p class="enlace-chico"><a href="https://www.youtube.com/watch?v=xU6xwMFuQWM" target="_blank" rel="noopener">Abrir en YouTube</a></p>
-          </div>
-        </article>
-
-        <article class="clip clip--inverso">
-          <p class="clip__n" aria-hidden="true">02</p>
-          <div class="clip__video">
-            <div class="video">
-              <button class="video__boton" type="button" data-yt="Nj5y1FBvn6Q" data-titulo="La caída de la casa, videoclip" aria-label="Reproducir el videoclip de La caída de la casa">
-                <img src="assets/la-caida-de-la-casa.jpg" alt="" loading="lazy" width="1459" height="821">
-                <span class="play" aria-hidden="true"></span>
-              </button>
-            </div>
-            <img class="clip__extra" src="assets/caida-manos.jpg" width="1800" height="1012" loading="lazy" alt="Fotograma de La caída de la casa: dos manos cubiertas de polvo ocultan un ojo.">
-          </div>
-          <div class="clip__datos">
-            <p class="mono">2025 · Single</p>
-            <h3 class="clip__titulo">La caída de la casa</h3>
-            <p>Lindoytriste se presenta como un muñeco olvidado que se esfuerza por no olvidarse de sí mismo.</p>
-            <p class="creditos">Dirigido y postproducido por César Carreño Montecino.</p>
-            <p class="enlace-chico"><a href="https://www.youtube.com/watch?v=Nj5y1FBvn6Q" target="_blank" rel="noopener">Abrir en YouTube</a></p>
-          </div>
-        </article>
-
-        <article class="clip">
-          <p class="clip__n" aria-hidden="true">03</p>
-          <div class="clip__video">
-            <div class="video">
-              <button class="video__boton" type="button" data-yt="T8_iQDiPiyE" data-titulo="Pirámide, videoclip" aria-label="Reproducir el videoclip de Pirámide">
-                <img src="https://i.ytimg.com/vi/T8_iQDiPiyE/maxresdefault.jpg" onerror="this.onerror=null;this.src='assets/un-circo-oscura.jpg'" alt="" loading="lazy" width="1280" height="720">
-                <span class="play" aria-hidden="true"></span>
-              </button>
-            </div>
-          </div>
-          <div class="clip__datos">
-            <p class="mono">2026 · Un circo</p>
-            <h3 class="clip__titulo">Pirámide</h3>
-            <p>La canción que habla de trascendencia, con un guiño a “Otra era” de Javiera Mena.</p>
-            <p class="enlace-chico"><a href="https://www.youtube.com/watch?v=T8_iQDiPiyE" target="_blank" rel="noopener">Abrir en YouTube</a></p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- PROPUESTA -->
-    <section class="bloque propuesta" id="propuesta" aria-labelledby="t-propuesta">
-      <img class="fondo-foto" src="assets/retrato-mano.jpg" width="1400" height="934" loading="lazy" alt="">
-      <div class="fondo-velo" aria-hidden="true"></div>
-      <div class="envoltura">
-        <p class="mono">Propuesta</p>
-        <h2 id="t-propuesta" class="antibalada">antibalada</h2>
-        <p class="bajada">Canciones acústicas que abrazan la disonancia, se apartan de la métrica tradicional y se resisten a lo comercial. Una balada que se desarma y se vuelve a armar sin más instrucciones que la intuición y la experimentación.</p>
-
-        <p class="ep-nota">En mi primer EP, <em>Un circo</em>, de 2026, presento 4 antibaladas. Por primera vez hago uso de destrozar la métrica, algo que aún no había hecho en mi primer sencillo, <em>La caída de la casa</em>.</p>
 
         <div class="principios">
-          <details open>
+          <details>
             <summary><span class="mono">01</span>Se rompe la métrica</summary>
             <p>Grabadas sin metrónomo, de una vez y a destiempo. El temblor y el desajuste no se corrigen: se adaptan.</p>
           </details>
@@ -271,20 +132,100 @@
             <p>Emparentada con las anticuecas de Violeta Parra y la antipoesía de Nicanor Parra, trasladadas al formato canción.</p>
           </details>
         </div>
-
-        <div class="propuesta__dos">
-          <figure class="cita">
-            <blockquote><p>Creo que es un formato más democrático y que abraza cosas que a veces la gente quiere evitar.</p></blockquote>
-            <figcaption class="mono">Lindoytriste, sobre la antibalada</figcaption>
-          </figure>
-          <figure class="setlist">
-            <img src="assets/setlist.jpg" width="1400" height="1050" loading="lazy" alt="Hojas impresas con letras y acordes de canciones, entre ellas La caída de la casa, Narciso, Ser y Coliseo Católico.">
-          </figure>
-        </div>
       </div>
     </section>
 
-    <!-- HISTORIA Y EN VIVO -->
+    <!-- MÚSICA -->
+    <section class="bloque musica" id="musica" aria-labelledby="t-musica">
+      <div class="envoltura">
+        <h2 id="t-musica" class="visually-hidden">Música</h2>
+        <ul class="plataformas" aria-label="Escuchar a Lindoytriste">
+          <li><a class="boton" href="https://open.spotify.com/intl-es/artist/3BiCyXL84lNNLmmLpQZnq5" target="_blank" rel="noopener">Spotify</a></li>
+          <li><a class="boton" href="https://music.apple.com/cl/artist/lindoytriste/1807225728" target="_blank" rel="noopener">Apple Music</a></li>
+          <li><a class="boton" href="https://www.youtube.com/@lindoytriste" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a class="boton" href="https://music.youtube.com/@lindoytriste" target="_blank" rel="noopener">YouTube Music</a></li>
+        </ul>
+
+        <!-- LA CAÍDA DE LA CASA (primer lanzamiento, va primero) -->
+        <article class="lanz caida" id="la-caida-de-la-casa" aria-labelledby="t-caida">
+          <div class="lanz__video">
+            <div class="video">
+              <button class="video__boton" type="button" data-yt="Nj5y1FBvn6Q" data-titulo="La caída de la casa, videoclip" aria-label="Reproducir el videoclip de La caída de la casa">
+                <img src="assets/la-caida-de-la-casa.jpg" alt="" loading="lazy" width="1459" height="821">
+                <span class="play" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="lanz__datos">
+            <p class="mono">Single debut · 2025</p>
+            <details class="desplegable" open>
+              <summary><h3 id="t-caida" class="lanz__titulo"><em>La caída de la casa</em></h3><span class="mas" aria-hidden="true"></span><span class="visually-hidden">Mostrar u ocultar información</span></summary>
+              <p class="era__frase">Una canción frágil pero demoledora sobre la pérdida del primer amor.</p>
+              <p>Fue escrita como un poema a fines de 2017 y se transformó en canción con el paso de los años. Su narrativa reimagina el cuerpo como una casa derruida por el paso del tiempo: una fachada agrietada donde la pena se vuelve un canto lento.</p>
+              <p>Se destruye y construye con doce versos, una guitarra acústica y un puñado de sonidos que rebotan como ecos de un pasado lejano.</p>
+              <p class="creditos">Dirigido y postproducido por César Carreño Montecino.</p>
+            </details>
+          </div>
+          <ul class="galeria galeria--mini" aria-label="Fotogramas del videoclip, toca una para agrandarla">
+            <li><button type="button" class="galeria__foto" data-grupo="caida" data-grande="assets/caida-clip-2.jpg" data-texto="La caída de la casa, videoclip"><img src="assets/caida-clip-2-mini.jpg" width="640" height="360" loading="lazy" alt="Fotograma del videoclip: una figura de rostro pintado sentada en el umbral de una puerta, entre muros naranjos."></button></li>
+            <li><button type="button" class="galeria__foto" data-grupo="caida" data-grande="assets/caida-clip-1.jpg" data-texto="La caída de la casa, videoclip"><img src="assets/caida-clip-1-mini.jpg" width="640" height="360" loading="lazy" alt="Fotograma del videoclip: primer plano de un rostro cubierto de polvo amarillo, con los ojos cerrados."></button></li>
+            <li><button type="button" class="galeria__foto" data-grupo="caida" data-grande="assets/caida-clip-5.jpg" data-texto="La caída de la casa, videoclip"><img src="assets/caida-clip-5-mini.jpg" width="640" height="360" loading="lazy" alt="Fotograma del videoclip: figura de rostro blanco y naranja apoyada en una pared de madera oscura."></button></li>
+            <li><button type="button" class="galeria__foto" data-grupo="caida" data-grande="assets/caida-manos.jpg" data-texto="La caída de la casa, videoclip"><img src="assets/caida-manos-mini.jpg" width="640" height="360" loading="lazy" alt="Fotograma del videoclip: dos manos cubiertas de polvo ocultan un ojo."></button></li>
+          </ul>
+        </article>
+
+        <!-- UN CIRCO -->
+        <article class="lanz circo" id="un-circo" aria-labelledby="t-circo">
+          <div class="lanz__video lanz__video--cuadrado">
+            <div class="video video--cuadrado">
+              <iframe src="https://www.youtube-nocookie.com/embed/WYWSaztrGTU?rel=0" title="Un circo, EP completo" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="lanz__datos">
+            <p class="mono">Primer EP · enero de 2026</p>
+            <h3 id="t-circo" class="lanz__titulo lanz__titulo--circo"><em>Un circo</em></h3>
+            <p class="era__frase">“Como un circo acústico y experimental”, define Lindoytriste a su primer EP.</p>
+            <p>Seis canciones en tan solo ocho minutos que profundizan la antibalada: un recorrido íntimo y surreal que va del fracaso a la persistencia, pasando por el dolor, la ternura y una nostalgia infantil que no se abandona. “Es más como un circo mental”, dice su autor, que además produjo el EP.</p>
+            <p>La voz de Chespirito abre y cierra el disco como un gesto lúdico, que presenta el circo no como espectáculo sino como estado mental.</p>
+          </div>
+
+          <ol class="pistas" aria-label="Tracklist de Un circo">
+            <li><span class="pistas__n">01</span><span class="pistas__t">Todos los payasos</span><span class="pistas__tema">¡Que se abra el telón! Los payasos tenemos que seguir trabajando</span></li>
+            <li><span class="pistas__n">02</span><span class="pistas__t">Tiro al blanco</span><span class="pistas__tema">Una antibalada de ensueño acerca del fracaso y el error</span></li>
+            <li><span class="pistas__n">03</span><span class="pistas__t">Pirámide</span><span class="pistas__tema">Un paseo trascendente y de otra era por un antiguo templo</span></li>
+            <li><span class="pistas__n">04</span><span class="pistas__t">Quebrazón</span><span class="pistas__tema">Un viaje disonante entre corazones rotos y glaciares</span></li>
+            <li><span class="pistas__n">05</span><span class="pistas__t">Gatos porfiados</span><span class="pistas__tema">La persistencia en 8 bits de la gente porfiada</span></li>
+            <li><span class="pistas__n">06</span><span class="pistas__t">¡Vivan los payasos!</span><span class="pistas__tema">Se cierra el telón con la voz de Chespirito... ¡Y que vivan los payasos!</span></li>
+          </ol>
+
+          <div class="clips" id="videoclips">
+            <div class="clips__item">
+              <div class="video">
+                <button class="video__boton" type="button" data-yt="xU6xwMFuQWM" data-titulo="Tiro al blanco, videoclip" aria-label="Reproducir el videoclip de Tiro al blanco">
+                  <img src="assets/tiro-al-blanco.jpg" alt="" loading="lazy" width="1600" height="900">
+                  <span class="play" aria-hidden="true"></span>
+                </button>
+              </div>
+              <p class="clips__t">Tiro al blanco <span class="mono">videoclip</span></p>
+              <p class="creditos">Grabado con una handycam en los Juegos Diana. Dirección de fotografía y cámara: Mia Loops y Javier Galindo.</p>
+            </div>
+            <div class="clips__item">
+              <div class="video">
+                <button class="video__boton" type="button" data-yt="T8_iQDiPiyE" data-titulo="Pirámide, videoclip" aria-label="Reproducir el videoclip de Pirámide">
+                  <img src="https://i.ytimg.com/vi/T8_iQDiPiyE/maxresdefault.jpg" onerror="this.onerror=null;this.src='assets/un-circo-oscura.jpg'" alt="" loading="lazy" width="1280" height="720">
+                  <span class="play" aria-hidden="true"></span>
+                </button>
+              </div>
+              <p class="clips__t">Pirámide <span class="mono">videoclip</span></p>
+            </div>
+          </div>
+
+          <p class="guinos"><span class="mono">Guiños</span> “Otra era”, de Javiera Mena, en <em>Pirámide</em>. “Me gustas tú”, de Manu Chao, en <em>Quebrazón</em>. Videojuegos de infancia: <em>Circus Charlie</em>, <em>Antarctic Adventure</em>, <em>The Legend of Zelda</em> y <em>Donkey Kong Country</em>.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
     <section class="bloque historia" id="historia" aria-labelledby="t-historia">
       <div class="envoltura">
         <p class="mono">Historia</p>
@@ -322,21 +263,19 @@
 
     <!-- FORMATO EN VIVO -->
     <section class="bloque envivo" id="en-vivo" aria-labelledby="t-envivo">
-      <img class="fondo-foto" src="assets/en-vivo-casona.jpg" width="1800" height="1011" loading="lazy" alt="">
-      <div class="fondo-velo" aria-hidden="true"></div>
       <div class="envoltura">
-        <h2 id="t-envivo" class="titulo titulo--gigante">Formato en vivo</h2>
-        <div class="envivo__texto">
-          <p class="lead">El formato en vivo puede ser solamente acústico, con guitarra, y también puede ser con pistas.</p>
-          <p>Suelo hacer presentaciones que cuentan historias e invitan a la gente a emocionarse, a conmoverse y a reírse, de ternura y de nervios.</p>
+        <div class="envivo__rejilla">
+          <div class="envivo__texto">
+            <p class="mono">En vivo</p>
+            <h2 id="t-envivo" class="titulo">Formato en vivo</h2>
+            <p class="lead">El formato en vivo puede ser acústico, acompañado solo de una guitarra, y también puede ser con pistas o acompañamiento instrumental. Las presentaciones cuentan historias e invitan a la gente a conmoverse, escuchar y compartir con atención y ternura.</p>
+          </div>
+          <ul class="galeria galeria--vivo" aria-label="Fotografías en vivo, toca una para agrandarla">
+            <li><button type="button" class="galeria__foto" data-grupo="vivo" data-grande="assets/en-vivo-casona.jpg" data-texto="Con El Otro Moreno, debut en Casona Compañía, 2023"><img src="assets/en-vivo-casona-mini.jpg" width="640" height="359" loading="lazy" alt="Con El Otro Moreno en el debut en Casona Compañía: dos músicos con micrófonos y una guitarra celeste, y en primer plano la pantalla de una cámara."></button></li>
+            <li><button type="button" class="galeria__foto" data-grupo="vivo" data-grande="assets/en-vivo-casona-2.jpg" data-texto="Debut en Casona Compañía, 2023"><img src="assets/en-vivo-casona-2-mini.jpg" width="640" height="427" loading="lazy" alt="Primer plano de un músico con gorro y camisa naranja, con los ojos cerrados, cantando frente a un micrófono."></button></li>
+          </ul>
         </div>
 
-        <ul class="galeria" aria-label="Fotografías en vivo, toca una para agrandarla">
-          <li><button type="button" class="galeria__foto" data-grande="assets/en-vivo-casona.jpg" data-texto="Con El Otro Moreno, debut en Casona Compañía, 2023"><img src="assets/en-vivo-casona-mini.jpg" width="640" height="359" loading="lazy" alt="Con El Otro Moreno en el debut en Casona Compañía: dos músicos con micrófonos y una guitarra celeste, y en primer plano la pantalla de una cámara."></button></li>
-          <li><button type="button" class="galeria__foto" data-grande="assets/en-vivo-casona-2.jpg" data-texto="Debut en Casona Compañía, 2023"><img src="assets/en-vivo-casona-2-mini.jpg" width="640" height="427" loading="lazy" alt="Primer plano de un músico con gorro y camisa naranja, con los ojos cerrados, cantando frente a un micrófono."></button></li>
-        </ul>
-
-        <p class="mono mono--seccion">Registros en vivo</p>
         <div class="vivo">
           <article class="vivo__clip">
             <div class="video">
@@ -346,8 +285,6 @@
               </button>
             </div>
             <p class="vivo__titulo">Debut en Feria Amo Comer</p>
-            <p class="mono">2023 · Casona Compañía</p>
-            <p class="enlace-chico"><a href="https://www.youtube.com/watch?v=vXG1AluRd2M&amp;t=2194s" target="_blank" rel="noopener">Abrir en YouTube</a></p>
           </article>
           <article class="vivo__clip">
             <div class="video">
@@ -357,8 +294,6 @@
               </button>
             </div>
             <p class="vivo__titulo">Sesiones al Interior</p>
-            <p class="mono">2024</p>
-            <p class="enlace-chico"><a href="https://www.youtube.com/watch?v=R13w7WS01KM" target="_blank" rel="noopener">Abrir en YouTube</a></p>
           </article>
         </div>
       </div>

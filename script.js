@@ -79,14 +79,14 @@
   });
 })();
 
-// 4. Galería en vivo: al tocar una foto se agranda; flechas y Esc para moverse.
+// 4. Galerías: al tocar una foto se agranda; flechas y Esc para moverse dentro de su grupo.
 (function () {
   var visor = document.querySelector('.visor');
-  var fotos = Array.prototype.slice.call(document.querySelectorAll('.galeria__foto'));
-  if (!visor || !fotos.length) return;
+  var todas = Array.prototype.slice.call(document.querySelectorAll('.galeria__foto'));
+  if (!visor || !todas.length) return;
   var img = visor.querySelector('img');
   var pie = visor.querySelector('figcaption');
-  var actual = 0, origen = null;
+  var fotos = todas, actual = 0, origen = null;
 
   function mostrar(i) {
     actual = (i + fotos.length) % fotos.length;
@@ -95,9 +95,11 @@
     img.alt = f.querySelector('img').alt;
     pie.textContent = f.getAttribute('data-texto') || '';
   }
-  fotos.forEach(function (f, i) {
+  todas.forEach(function (f) {
     f.addEventListener('click', function () {
-      origen = f; mostrar(i);
+      var g = f.getAttribute('data-grupo');
+      fotos = todas.filter(function (x) { return x.getAttribute('data-grupo') === g; });
+      origen = f; mostrar(fotos.indexOf(f));
       if (visor.showModal) visor.showModal(); else visor.setAttribute('open', '');
     });
   });
